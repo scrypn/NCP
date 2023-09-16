@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:windowSoftInputMode="stateUnspecified">
+    <group app:showAsAction="always" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="706"
+        android:title="@string/reload_program_data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_save"
+        android:orderInCategory="706"
+        android:title="@string/load_data"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_send"
+        android:orderInCategory="706"
+        android:title="@string/share_server_data"
+        app:showAsAction="never" />
+</menu>

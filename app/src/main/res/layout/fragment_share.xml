@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/share"
+              android:orientation="vertical">
+    <!--<EditText
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:hint="Как вас зовут?"
+        android:fontFamily="sans-serif"
+        android:textSize="25sp"
+        android:background="#D8D7FA"
+        android:textColor="#0252F0" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="0dp"
+        android:background="#D8D7FA"
+        android:text="Кому : support@neter.com"
+        android:textColor="#0252F0"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/text_email"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#ede7f6"
+        android:textSize="22sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:hint="Введите сообщение"
+        android:textColorHint="#AD0245F0"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="true"
+        android:textColor="#0245F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:imeOptions="actionDone"/>
+-->
+    <Button
+        android:id="@+id/url_open_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="50dp"
+        android:enabled="true"
+        android:text="Напишите нам на сайте www.scryp.ru"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_email"
+        app:layout_constraintVertical_bias="0.2" />
+</LinearLayout>

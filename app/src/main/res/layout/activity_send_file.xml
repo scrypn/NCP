@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendFileActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_send"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <TextView
+        android:layout_height="40dp"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+
+        android:text="От кого : SvarogCP"
+        android:fontFamily="sans-serif"
+        android:textSize="25sp"
+        android:background="#D8D7FA"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_send"
+        android:textColor="@color/colorPrimary" />
+
+
+    <EditText
+        android:id="@+id/his_email"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#D8D7FA"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:hint="Введите ваш email"
+        android:textColorHint="@color/colorPrimary"
+        android:inputType="textEmailAddress"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:imeOptions="actionDone"/>
+
+    <EditText
+        android:id="@+id/text_email2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ede7f6"
+        android:textSize="22sp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:hint="Введите сообщение"
+        android:inputType="textMultiLine"
+        android:selectAllOnFocus="true"
+        android:textColor="#0252F0"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/send_button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginTop="50dp"
+        android:layout_margin="50dp"
+        android:enabled="true"
+        android:text="Отправить"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_email"
+        app:layout_constraintVertical_bias="0.2" />
+
+</LinearLayout>

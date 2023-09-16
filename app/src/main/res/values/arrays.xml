@@ -1,0 +1,71 @@
+<resources>
+    <!-- Reply Preference -->
+    <string-array name="reply_entries">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <string-array name="reply_values">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+
+    <string-array name="graph_entries">
+        <item>Кривой график</item>
+        <item>Ломаный график</item>
+    </string-array>
+
+    <string-array name="graph_values">
+        <item>Кривой график</item>
+        <item>Ломаный график</item>
+    </string-array>
+
+    <string-array name="points_entries">
+        <item>Круглый</item>
+        <item>Квадратный</item>
+        <item>Ромбообразный</item>
+    </string-array>
+
+    <string-array name="points_values">
+        <item>Круглый</item>
+        <item>Квадратный</item>
+        <item>Ромбообразный</item>
+    </string-array>
+
+    <string-array name="pointsdata_entries">
+        <item>Не показывать</item>
+        <item>Показывать при нажатии</item>
+        <item>Показывать всегда</item>
+    </string-array>
+
+    <string-array name="pointsdata_values">
+        <item>Не показывать</item>
+        <item>Показывать при нажатии</item>
+        <item>Показывать всегда</item>
+    </string-array>
+
+    <string-array name="orentation_entries">
+        <item>Альбомная</item>
+        <item>Портретная</item>
+        <item>Обе</item>
+    </string-array>
+
+    <string-array name="orentation_values">
+        <item>Альбомная</item>
+        <item>Портретная</item>
+        <item>Обе</item>
+    </string-array>
+</resources>

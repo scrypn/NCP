@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="Пользовательские разрешения">
+        <CheckBoxPreference
+            app:key="wifi_agree"
+            app:title="Использование Wi-Fi"
+            app:summary="Разрешение на доступ к Wi-Fi (включение/выключение, выход в Интернет, доступ к локальной сети), разрешение необходимо."
+            app:defaultValue="true" />
+
+        <EditTextPreference
+            app:key="email"
+            app:title="Email адрес"
+            app:summary="Адрес вашей электронной почты, на который по умолчанию будут отправляться данные (перед отправкой адрес можно поменять)."
+            />
+        <CheckBoxPreference
+            app:selectable="false"
+            app:key="file_agree"
+            app:title="Использование CD-карты (памяти устройства)"
+            app:summary="Разрешение на чтение и запись данных на CD-карту устройства, разрешение необходимо."
+            app:defaultValue="true"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Подключения">
+
+        <CheckBoxPreference
+            app:dependency="wifi_agree"
+            app:key="wifi"
+            app:title="Автовключение Wi-Fi"
+            app:summary="Позволяет включать Wi-Fi автоматически при каждом входе в приложение."
+            app:defaultValue="true"/>
+        <EditTextPreference
+            app:dependency="wifi_agree"
+            app:key="ipServer"
+            app:title="Адрес сервера"
+            app:summary="Укажите ip-адрес или доменное имя сервера."
+            />
+        <EditTextPreference
+            app:dependency="wifi_agree"
+            app:key="ipPort"
+            app:title="Порт сервера"
+            app:defaultValue="9999"
+            app:summary="Укажите порт сервера"
+            />
+
+    </PreferenceCategory>
+
+
+    <PreferenceCategory app:title="Визуализация данных">
+        <SwitchPreferenceCompat
+            app:key="reload"
+            app:title="Автообновление графиков"
+            app:summary="Графики будут автоматически обновлять свои значения с заданным интервалом"
+            app:defaultValue="false"/>
+        <ListPreference
+            app:dependency="reload"
+            app:dialogTitle="Интервал"
+            app:entries="@array/reply_entries"
+            app:entryValues="@array/reply_values"
+            app:key="interval"
+            app:defaultValue="3"
+            app:summary="Выберите необходимый интервал обновления данных в секундах"
+            app:title="Интервал" />
+        <SwitchPreferenceCompat
+        app:key="animation"
+        app:title="Анимация"
+        app:summary="Анимация автообновления графиков"
+            app:dependency="reload"
+        app:defaultValue="false"/>
+        <SwitchPreferenceCompat
+            app:key="lines"
+            app:title="Вспомогательные линии"
+            app:summary="Включение/выключение вспомогательных линий на координатной оси графика для более удобного определения координат его точек перегиба"/>
+
+        <ListPreference
+            app:dialogTitle="Выберите вид выводимого графика"
+            app:entries="@array/graph_entries"
+            app:entryValues="@array/graph_values"
+            app:key="graph_options2"
+            app:defaultValue="1"
+            app:summary="Укажите вид графика"
+            app:title="Вид" />
+        <SwitchPreferenceCompat
+            app:key="filled"
+            app:title="Заполнение графика"
+            app:summary="Заполнение цветом части координатной оси, находящейся под графиком"/>
+        <SwitchPreferenceCompat
+            app:key="points"
+            app:title="Точки перегиба"
+            app:summary="Присутствие точек перегиба графика"/>
+        <ListPreference
+            app:dependency="points"
+            app:dialogTitle="Выберите параметры вывода координат"
+            app:entries="@array/pointsdata_entries"
+            app:entryValues="@array/pointsdata_values"
+            app:key="point_data"
+            app:defaultValue="1"
+            app:summary="Укажите параметры вывода координат над точками перегиба графика"
+            app:title="Координаты" />
+
+        <ListPreference
+            app:dependency="points"
+            app:dialogTitle="Выберите формат точек перегиба графика"
+            app:entries="@array/points_entries"
+            app:entryValues="@array/points_values"
+            app:key="points_format"
+            app:defaultValue="1"
+            app:summary="Выберите необходимый формат точек перегиба графика"
+            app:title="Формат" />
+</PreferenceCategory>
+</PreferenceScreen>
